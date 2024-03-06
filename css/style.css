@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Segoe UI';
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 0;
+}
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.header__logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+}
+.logo__img{
+  filter: invert(1);
+  width: 20px;
+  cursor: pointer;
+}
+.logo__txt{
+  padding-left: 10px;
+}
+.header__menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.header__menu-link {
+  margin-right: 20px;
+}
+.header__menu-link a {
+  color: #fff;
+  text-decoration: none;
+}
+.header__menu-link a:hover {
+  text-decoration: underline;
+}
+#nav1{
+  font-size: larger;
+  height: 80px;
+  border-bottom: thick solid black;
+  padding-top: 20px;
+  text-align: center;
+}
+.main {
+  margin: 20px auto;
+  width: 90%;
+  box-sizing: border-box;
+}
+.minu{
+  position: fixed;
+  text-align: center;
+  border: thick solid black;
+  width: 190px;
+  height: 520px;
+  left: 30px;
+}
+.minu__vid{
+  color: #000;
+  font-family: 'Segoe UI';
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.minu__vid:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: #7c7c7c;
+  transition: 0.5s;
+}
+.section{
+  padding-left: 170px;
+}
+.content{
+  display: flex;
+  padding-bottom: 30px;
+}
+.content__img{
+  border: thick solid black;
+  width: 250px;
+  height: 100%;
+}
+.content__txt{
+  padding-left: 30px;
+}
+.footer{
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 0;
+}
+@media screen and (max-width: 906px) {
+  .minu{
+    display: none;
+  }
+  .section{
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 472px) {
+  .logo__txt{
+    display: none;
+  }
+  .main {
+    margin: 20px 0;
+  }
+  .content__img{
+    width: 150px;
+  }
+  #nav1{
+    font-size: 1em;
+  }
+}
